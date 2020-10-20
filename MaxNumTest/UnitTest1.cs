@@ -38,5 +38,38 @@ namespace MaxNumTest
             int actual = MaxNum.Max(10, 20, 30);
             Assert.AreEqual(expected, actual);
         }
+
+        /// <summary>
+        /// TC 2.1
+        /// </summary>
+        [TestMethod]
+        public void TestForMaxNumFloat_TC2_1()
+        {
+            double expected = 30.5;
+            double actual = MaxNum.Max(30.5,20.5,10.5);
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// TC 2.2
+        /// </summary>
+        [TestMethod]
+        public void TestForMaxNumFloat_TC2_2()
+        {
+            double expected = 30.5;
+            double actual = MaxNum.Max(20.5, 30.5, 10.5);
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// TC 2.3
+        /// </summary>
+        [TestMethod]
+        public void TestForMaxNumFloat_TC2_3()
+        {
+            double expected = 30.5;
+            double actual = MaxNum.Max(10.5, 20.5, 30.5);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
