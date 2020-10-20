@@ -71,5 +71,39 @@ namespace MaxNumTest
             double actual = MaxNum.Max(10.5, 20.5, 30.5);
             Assert.AreEqual(expected, actual);
         }
+
+        /// <summary>
+        /// TC 3.1
+        /// </summary>
+        [TestMethod]
+        public void TestForMaxString_TC3_1()
+        {
+            string expected = "Peach";
+            string actual = MaxNum.Max("Peach","Apple","Banana");
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// TC 3.2
+        /// </summary>
+        [TestMethod]
+        public void TestForMaxString_TC3_2()
+        {
+            string expected = "Peach";
+            string actual = MaxNum.Max("Apple", "Peach", "Banana");
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// TC 3.3
+        /// </summary>
+        [TestMethod]
+        public void TestForMaxString_TC3_3()
+        {
+            string expected = "Peach";
+            string actual = MaxNum.Max("Apple", "Banana", "Peach");
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
