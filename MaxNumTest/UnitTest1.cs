@@ -12,8 +12,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxNumInt_TC1_1()
         {
-            int expected = 30;
-            int actual = MaxNum<int>.Max(30,20,10);
+            int expected = 50;
+            int[] arr = { 10, 20, 30, 40, 50 };
+            int actual = MaxNum<int>.Max(arr);
             Assert.AreEqual(expected, actual);
         }
 
@@ -23,8 +24,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxNumInt_TC1_2()
         {
-            int expected = 30;
-            int actual = MaxNum<int>.Max(20, 30, 10);
+            int expected = 50;
+            int[] arr = { 10, 20, 30, 40, 50 };
+            int actual = MaxNum<int>.Max(arr);
             Assert.AreEqual(expected, actual);
         }
 
@@ -34,8 +36,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxNumInt_TC1_3()
         {
-            int expected = 30;
-            int actual = MaxNum<int>.Max(10, 20, 30);
+            int expected = 50;
+            int[] arr = { 10, 20, 30, 40, 50 };
+            int actual = MaxNum<int>.Max(arr);
             Assert.AreEqual(expected, actual);
         }
 
@@ -45,8 +48,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxNumFloat_TC2_1()
         {
-            double expected = 30.5;
-            double actual = MaxNum<double>.Max(30.5,20.5,10.5);
+            double expected = 50.5;
+            double[] arr2 = { 10.5, 20.5, 30.5, 40.5, 50.5 };
+            double actual = MaxNum<double>.Max(arr2);
             Assert.AreEqual(expected, actual);
         }
 
@@ -56,8 +60,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxNumFloat_TC2_2()
         {
-            double expected = 30.5;
-            double actual = MaxNum<double>.Max(20.5, 30.5, 10.5);
+            double expected = 50.5;
+            double[] arr2 = { 10.5, 20.5, 30.5, 40.5, 50.5 };
+            double actual = MaxNum<double>.Max(arr2);
             Assert.AreEqual(expected, actual);
         }
 
@@ -67,8 +72,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxNumFloat_TC2_3()
         {
-            double expected = 30.5;
-            double actual = MaxNum<double>.Max(10.5, 20.5, 30.5);
+            double expected = 50.5;
+            double[] arr2 = { 10.5, 20.5, 30.5, 40.5, 50.5 };
+            double actual = MaxNum<double>.Max(arr2);
             Assert.AreEqual(expected, actual);
         }
 
@@ -78,8 +84,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxString_TC3_1()
         {
-            string expected = "Peach";
-            string actual = MaxNum<string>.Max("Peach","Apple","Banana");
+            string expected = "Virat";
+            string[] arr3 = { "Rohit", "Virat", "Rahul", "Shami", "Bumrah" };
+            string actual = MaxNum<string>.Max(arr3);
             Assert.AreEqual(expected, actual);
         }
 
@@ -89,8 +96,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxString_TC3_2()
         {
-            string expected = "Peach";
-            string actual = MaxNum<string>.Max("Apple", "Peach", "Banana");
+            string expected = "Virat";
+            string[] arr3 = { "Rohit", "Virat", "Rahul", "Shami", "Bumrah" };
+            string actual = MaxNum<string>.Max(arr3);
             Assert.AreEqual(expected, actual);
         }
 
@@ -100,8 +108,9 @@ namespace MaxNumTest
         [TestMethod]
         public void TestForMaxString_TC3_3()
         {
-            string expected = "Peach";
-            string actual = MaxNum<string>.Max("Apple", "Banana", "Peach");
+            string expected = "Virat";
+            string[] arr3 = { "Rohit", "Virat", "Rahul", "Shami", "Bumrah" };
+            string actual = MaxNum<string>.Max(arr3);
             Assert.AreEqual(expected, actual);
         }
 
