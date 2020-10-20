@@ -13,7 +13,7 @@ namespace MaxNumTest
         public void TestForMaxNumInt_TC1_1()
         {
             int expected = 30;
-            int actual = MaxNum.Max(30,20,10);
+            int actual = MaxNum<int>.Max(30,20,10);
             Assert.AreEqual(expected, actual);
         }
 
@@ -24,7 +24,7 @@ namespace MaxNumTest
         public void TestForMaxNumInt_TC1_2()
         {
             int expected = 30;
-            int actual = MaxNum.Max(20, 30, 10);
+            int actual = MaxNum<int>.Max(20, 30, 10);
             Assert.AreEqual(expected, actual);
         }
 
@@ -35,7 +35,7 @@ namespace MaxNumTest
         public void TestForMaxNumInt_TC1_3()
         {
             int expected = 30;
-            int actual = MaxNum.Max(10, 20, 30);
+            int actual = MaxNum<int>.Max(10, 20, 30);
             Assert.AreEqual(expected, actual);
         }
 
@@ -46,7 +46,7 @@ namespace MaxNumTest
         public void TestForMaxNumFloat_TC2_1()
         {
             double expected = 30.5;
-            double actual = MaxNum.Max(30.5,20.5,10.5);
+            double actual = MaxNum<double>.Max(30.5,20.5,10.5);
             Assert.AreEqual(expected, actual);
         }
 
@@ -57,7 +57,7 @@ namespace MaxNumTest
         public void TestForMaxNumFloat_TC2_2()
         {
             double expected = 30.5;
-            double actual = MaxNum.Max(20.5, 30.5, 10.5);
+            double actual = MaxNum<double>.Max(20.5, 30.5, 10.5);
             Assert.AreEqual(expected, actual);
         }
 
@@ -68,7 +68,7 @@ namespace MaxNumTest
         public void TestForMaxNumFloat_TC2_3()
         {
             double expected = 30.5;
-            double actual = MaxNum.Max(10.5, 20.5, 30.5);
+            double actual = MaxNum<double>.Max(10.5, 20.5, 30.5);
             Assert.AreEqual(expected, actual);
         }
 
@@ -79,7 +79,7 @@ namespace MaxNumTest
         public void TestForMaxString_TC3_1()
         {
             string expected = "Peach";
-            string actual = MaxNum.Max("Peach","Apple","Banana");
+            string actual = MaxNum<string>.Max("Peach","Apple","Banana");
             Assert.AreEqual(expected, actual);
         }
 
@@ -90,7 +90,7 @@ namespace MaxNumTest
         public void TestForMaxString_TC3_2()
         {
             string expected = "Peach";
-            string actual = MaxNum.Max("Apple", "Peach", "Banana");
+            string actual = MaxNum<string>.Max("Apple", "Peach", "Banana");
             Assert.AreEqual(expected, actual);
         }
 
@@ -101,7 +101,7 @@ namespace MaxNumTest
         public void TestForMaxString_TC3_3()
         {
             string expected = "Peach";
-            string actual = MaxNum.Max("Apple", "Banana", "Peach");
+            string actual = MaxNum<string>.Max("Apple", "Banana", "Peach");
             Assert.AreEqual(expected, actual);
         }
 
